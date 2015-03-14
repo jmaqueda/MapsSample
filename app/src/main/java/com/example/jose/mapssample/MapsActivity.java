@@ -2,12 +2,16 @@ package com.example.jose.mapssample;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.content.Context;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import com.google.android.gms.common.GooglePlayServicesClient;
 import com.google.android.gms.location.LocationServices;
+=======
+
+>>>>>>> origin/master
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -79,6 +83,12 @@ public class MapsActivity extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
+<<<<<<< HEAD
         mMap.addMarker(new MarkerOptions().position(new LatLng(36.6534, 122)).title("Marker"));
+=======
+        mMap.addMarker(new MarkerOptions().position(new LatLng(36.6546235,-121.8105497)).title("California State University Monterey Bay"));
+        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(36.6546235, -121.8105497), 13));
+>>>>>>> origin/master
     }
 }
